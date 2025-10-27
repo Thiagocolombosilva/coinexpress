@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingCart, User, LogOut, CreditCard, Smartphone, Bitcoin, Shield, Clock, Star, Menu, X } from 'lucide-react';
+import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom'
 
 const CoinExpressSite = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -497,4 +498,13 @@ const CoinExpressSite = () => {
     </div>
   );
 };
+
+function App() {
+ // your routes here
+  // const routes = [...]
+
+  const router = createBrowserRouter(routes, { basename: import.meta.env.DEV ? '/' : '/react-vite-gh-pages/' })
+
+  return <RouterProvider router={router} />
+}
 export default CoinExpressSite;
