@@ -507,9 +507,10 @@ function App() {
     },
   ];
 
-  const router = createBrowserRouter(routes, { basename: import.meta.env.DEV ? '/' : '/coinexpress/' })
+  const router = createBrowserRouter(routes, { basename: '/'  })
 
   return <RouterProvider router={router} />
 }
 
 export default App;
+
