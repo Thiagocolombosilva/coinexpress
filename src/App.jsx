@@ -120,7 +120,7 @@ const CoinExpressSite = () => {
                   >
                     <ShoppingCart size={20} />
                     {cart.length > 0 && (
-                    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                      <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                         {cart.length}
                       </span>
                     )}
@@ -195,7 +195,7 @@ const CoinExpressSite = () => {
           <div className="text-center space-y-6">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
               Tibia Coins com
-              "bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"> Segurança</span>
+              <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent"> Segurança</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
               A forma mais rápida e segura de comprar Tibia Coins. Entrega automática em minutos!
@@ -314,7 +314,7 @@ const CoinExpressSite = () => {
                 <div className="bg-slate-700/50 p-4 rounded-lg">
                   <div className="flex justify-between text-white mb-2">
                     <span>Subtotal:</span>
-                    "font-bold">
+                    <span className="font-bold">
                       R$ {(packages.find(p => p.id === selectedPackage).price * quantity).toFixed(2)}
                     </span>
                   </div>
@@ -468,8 +468,8 @@ const CoinExpressSite = () => {
 
                   <div className="bg-slate-700/50 p-4 rounded-lg">
                     <div className="flex justify-between text-white text-xl mb-2">
-                      "font-bold">Total:</span>
-                      "font-bold text-yellow-400">
+                      <span className="font-bold">Total:</span>
+                      <span className="font-bold text-yellow-400">
                         R$ {getTotalCart().toFixed(2)}
                       </span>
                     </div>
@@ -511,4 +511,5 @@ function App() {
 
   return <RouterProvider router={router} />
 }
+
 export default App;
