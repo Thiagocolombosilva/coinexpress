@@ -3,6 +3,7 @@
 	"type": "module",
 	"version": "0.0.0",
 	"private": true,
+	"homepage": ".",
 	"scripts": {
 		"dev": "vite --host :: --port 3000",
 		"build": "vite build",
