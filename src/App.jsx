@@ -99,7 +99,7 @@ const CoinExpressSite = () => {
               <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center font-bold text-xl">
                 CE
               </div>
-              "text-2xl font-bold text-white">CoinExpress</span>
+              <span "text-2xl font-bold text-white">CoinExpress</span>
             </div>
 
             {/* Mobile menu button */}
